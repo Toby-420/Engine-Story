@@ -41,7 +41,7 @@ A: ~ ~!
 
 V: %
 
-R: implements all of section 5.
+R: implements all of section 6.
 
 Additions are independent of generic classes.
 
