@@ -29,13 +29,18 @@ Engines are classified according to their supported commands
 
 ### 2.1. Generic Classes
 Basic: ` ! $
+
 Type-1: Basic + @ : ?
+
 Type-2: Type-1 + $$ _ / ;NUM ; #
+
 Type-3: Type-2 + * ** *@
 
 ### 2.2. Additions
 A: ~ ~!
+
 V: %
+
 R: implements all of section 5.
 
 Additions are independent of generic classes.
@@ -89,15 +94,25 @@ Then, if an argument is required, it is provided.
 
 ### 4.1. Command Families
 ` Comment
+
 / Speaker
+
 $ Dialogue
+
 ; Typewriter Mode
+
 @ Label Definitions
+
 : Jump Handling (aka. goto)
+
 ? User Choice Branch
+
 % Image Display
+
 ~ Music Handling
-* File Handling
+
+\* File Handling
+
 ! Termination
 
 ### 4.2. Modifiers
@@ -107,7 +122,7 @@ $ Don't wait for keypress
 #### 4.2.2. Music handling
 ! Stop currently playing music
 #### 4.2.3. File Handling
-* Return to previous file
+\* Return to previous file
 @ Story Loading
 
 ### 4.3. Arguments
@@ -179,7 +194,9 @@ On modern, standard systems, the following advice should be followed:
 
 Only the formats specified here need to be handled.
 These should be loaded in the following order:
+
 1 - JPEG
+
 2 - PNG
 
 To reach recommended status for music files, an engine must not load proprietary formats as these often require licenses which can stop some users from using them. Since there are so many high quality open formats, there is no reason to use a proprietary format.
@@ -198,9 +215,13 @@ These should be loaded in the following generic order:
 - Uncompressed Formats (.wav)
 
 The order should then be:
+
 1 - ogg
+
 2 - mp3
+
 3 - flac
+
 4 - wav
 
 To reach recommended status for music files, an engine must not load proprietary formats as these often require licenses which can stop some users from using them. Since there are so many high quality free formats, there is no reason to use a proprietary format.
