@@ -9,9 +9,8 @@ Engines may interpret and take actions in the manner they choose, providing the 
 The language is designed to be progressively compliant, meaning engines can support subsets of functionality to suit needs (such as platform or size requirements) without causing compatiblity issues.
 
 ### 1.1. File Formats
-Engine Story can have the following file extensions (case insensitive):
+Engine Story files must have the following extension (case insensitive):
 - .EST (recommended, Engine STory)
-- .STY (legacy, engine STorY)
 
 Of course, the file extension has no bearing of the actual contents of the file, but since it is used on non-unix systems, file extensions are important.
 
@@ -186,10 +185,8 @@ If the engine does not implement a command with recommended aspects, it does not
 The engine shall output a warning or error message to the terminal (or equivalent for the platform) depending on the encountered issue. Examples are 3.6. and 3.7.
 ### 6.2. File Priority
 Since no file extensions are given for file loading, priorities can be made for loading.
-#### 6.2.1. Story Files
-These should be loaded in the order given in 1.1.
-#### 6.2.2. Image Files
-##### 6.2.2.1. General Implementations
+#### 6.2.1. Image Files
+##### 6.2.1.1. General Implementations
 On modern, standard systems, the following advice should be followed:
 
 Only the formats specified here need to be handled.
@@ -201,12 +198,12 @@ These should be loaded in the following order:
 
 To reach recommended status for music files, an engine must not load proprietary formats as these often require licenses which can stop some users from using them. Since there are so many high quality open formats, there is no reason to use a proprietary format.
 
-##### 6.2.2.2. Specific Implementations
+##### 6.2.1.2. Specific Implementations
 For legacy systems or systems where standard files (such as JPEG) will not work, it is up to the implementation author to decide whether to use a standard for that system, or to create a new format that fills their requirements.
 In this case, the implementation author should provide or link to free and open source tooling to convert between ordinary files and these specific files along with an explanation stating how the new files work.
 
-#### 6.2.3. Music Files
-##### 6.2.3.1. General Implementations
+#### 6.2.2. Music Files
+##### 6.2.2.1. General Implementations
 On modern, standard systems, the following advice should be followed:
 
 Only the formats specified here need to be handled to gain Recommended status.
@@ -223,5 +220,5 @@ The order should then be:
 
 To reach recommended status for music files, an engine must not load proprietary formats as these often require licenses which can stop some users from using them. Since there are so many high quality free formats, there is no reason to use a proprietary format.
 
-##### 6.2.3.2. Specific Implementations
-Read 6.2.2.2.
+##### 6.2.2.2. Specific Implementations
+Read 6.2.1.2.
