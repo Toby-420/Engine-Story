@@ -209,10 +209,7 @@ In this case, the implementation author should provide or link to free and open 
 ##### 6.2.3.1. General Implementations
 On modern, standard systems, the following advice should be followed:
 
-Only the formats specified here need to be handled.
-These should be loaded in the following generic order:
-- Compressed Formats (.ogg, .mp3, .flac)
-- Uncompressed Formats (.wav)
+Only the formats specified here need to be handled to gain Recommended status.
 
 The order should then be:
 
