@@ -60,23 +60,23 @@ The order of save items does not matter as they are interpreted, but this is the
 
 For example, if speaker Bob has said "Hello, world!", typewriter mode is set to 20 milliseconds, image TREES is shown, the music JUNGLE is playing, the current file is BOB1 at line 2, and we were previously at file MASTER at line 40, the data is as follows:
 
-`^
+\`^
 /Bob
 $ Hello, world!
 ;20
 %TREES
 ~JUNGLE
-`.BOB1
-`:2
-`\<MASTER
-`@40
-`!
+\`.BOB1
+\`:2
+\`\<MASTER
+\`@40
+\`!
 
 ## 2. Conformance Levels
 Engines are classified according to their supported commands
 
 ### 2.1. Generic Classes
-Basic: ` ! $
+Basic: \` ! $
 
 Type-1: Basic + @ : ?
 
@@ -145,7 +145,7 @@ Commands may then be followed immediately by a modifier character.
 Then, if an argument is required, it is provided.
 
 ### 4.1. Command Families
-` Comment
+\` Comment
 
 / Speaker
 
@@ -194,8 +194,8 @@ $ "
 
 Any alphanumeric (a-Z, 0-9) character as they are used for arguments
 
-The only exception is ` as it is ignored or treated as metadata depending on modifier by every other engine.
-It is not recommended to use ` for anything beyond metadata as it should be just a comment rather than instructions.
+The only exception is \` as it is ignored or treated as metadata depending on modifier by every other engine.
+It is not recommended to use \` for anything beyond metadata as it should be just a comment rather than instructions.
 
 ### 4.2. Modifiers
 #### 4.2.1. Comments
